@@ -4,6 +4,8 @@ import { Form, Alert } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import GoogleButton from "react-google-button";
 import { useUserAuth } from "../context/UserAuthContext";
+import "./Login.css";
+import logo from "../context/nari.png";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -35,28 +37,31 @@ const Login = () => {
 
   return (
     <>
-      <div className="p-4 box">
-        <h2 className="mb-3">Firebase Auth Login</h2>
+      <div className="p-4">
+        <img className="logo" src={logo} alt="Logo" />
+        <h2 className="heading">Nari</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Control
+              className="box-design"
               type="email"
-              placeholder="Email address"
+              placeholder="email"
               onChange={(e) => setEmail(e.target.value)}
             />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Control
+              className="box-design"
               type="password"
-              placeholder="Password"
+              placeholder="password"
               onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
 
           <div className="d-grid gap-2">
-            <Button variant="primary" type="Submit">
+            <Button variant="primary" type="Submit" className="box-design">
               Log In
             </Button>
           </div>
@@ -70,7 +75,7 @@ const Login = () => {
           />
         </div>
       </div>
-      <div className="p-4 box mt-3 text-center">
+      <div className="p-4 mt-3 text-center">
         Don't have an account? <Link to="/signup">Sign up</Link>
       </div>
     </>
