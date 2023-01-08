@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.heading{
+    font-family: satisfy;
+    width: 168px;
+    height: 90px;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 91px;
+    color: #0D1B4C;
+    margin-left: 7rem;
+}
+
+.logo {
+    position: relative;
+    width: 7rem;  
+    height: 7rem;  
+    margin-left: 6.5rem;
+    margin-top: -2rem;
+}
+
+.box-design {
+    border: 1px solid #3F6699;
+    border-radius: 2rem;
+
+}
