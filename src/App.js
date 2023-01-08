@@ -8,6 +8,7 @@ import Signup from "./components/Signup";
 import Map from "./components/Map";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
+import Test from "./components/Test";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <Route path="/map" element={<Map />} />e
               <Route path="/" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
+              <Route path="/t" element={<Test />} />
             </Routes>
           </UserAuthContextProvider>
         </Col>

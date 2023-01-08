@@ -1,5 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  background-color: #F3ECC8;
+  background-color: #f3ecc8;
   display: flex;
   justify-content: center;
   align-content: center;

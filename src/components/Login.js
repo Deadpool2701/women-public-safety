@@ -75,7 +75,7 @@ const Login = () => {
           />
         </div>
       </div>
-      <div className="p-4 mt-3 text-center">
+      <div className="p-4 mt-3 text-center rounded-sm">
         Don't have an account? <Link to="/signup">Sign up</Link>
       </div>
     </>
